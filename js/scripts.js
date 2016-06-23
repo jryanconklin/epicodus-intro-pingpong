@@ -10,6 +10,10 @@ var pong = function(number) {
   return true;
 };
 
+var pingPong = function(number) {
+  if (number % 15 === 0)
+  return true;
+};
 
 
 
@@ -25,7 +29,9 @@ $(document).ready(function() {
     var numbers = [];
 
     for ( var i = 1; i <= userNumber; i += 1 ) {
-      if (ping(i)) {
+      if (pingPong(i)) {
+        numbers.push("pingpong");
+      } else if (ping(i)) {
         numbers.push("ping");
       } else if (pong(i)) {
         numbers.push("pong");
