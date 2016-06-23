@@ -1,6 +1,9 @@
 // Business Logic
 
-
+var pingPong = function(number) {
+  if (number % 3 === 0)
+  return true;
+};
 
 
 
@@ -18,8 +21,11 @@ $(document).ready(function() {
     var userNumber = $("input#userNumber").val();
     var numbers = [];
 
-    for ( var i = 0; i <= userNumber; i += 1 ) {
-      numbers.push(i);
+    for ( var i = 1; i <= userNumber; i += 1 ) {
+      if (pingPong(i)) {
+        numbers.push("ping");
+      } else
+        numbers.push(i);
     }
 
     $(".numbers").text(numbers);
