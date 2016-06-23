@@ -1,11 +1,14 @@
 // Business Logic
 
-var pingPong = function(number) {
+var ping = function(number) {
   if (number % 3 === 0)
   return true;
 };
 
-
+var pong = function(number) {
+  if (number % 5 === 0)
+  return true;
+};
 
 
 
@@ -22,8 +25,10 @@ $(document).ready(function() {
     var numbers = [];
 
     for ( var i = 1; i <= userNumber; i += 1 ) {
-      if (pingPong(i)) {
+      if (ping(i)) {
         numbers.push("ping");
+      } else if (pong(i)) {
+        numbers.push("pong");
       } else
         numbers.push(i);
     }
