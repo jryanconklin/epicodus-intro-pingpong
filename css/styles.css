@@ -1,12 +1,5 @@
 /* ID Selectors */
 
-/*#hogwarts,
-#ds9,
-#shire,
-#mordor {
-  display: none;
-}*/
-
 #comingSoon {
   display: none;
 }
@@ -64,18 +57,6 @@ img {
   margin: 0 5px 5px 0;
 }
 
-/*.quizSection {
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
-  padding: 6% 12%;
-  border-top: #1D2120 10px solid;
-  background: #5A5C51 url('../img/forest-pipe.jpg') no-repeat center;
-  background-size: cover;
-  margin: 40px 0 60px;
-  border-radius: 1%;
-  box-shadow: inset 0 0 10px 5px #1D2120;
-}*/
-
 .gameSection {
   align-items: center;
   padding: 10px;
@@ -107,77 +88,7 @@ img {
   border-bottom: solid 10px #BCD5D1;
 }
 
-/*.quizDivider {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  line-height: 20px;
-  border-top: 2px solid #BCD5D1;
-}
-
-.resultHogwarts {
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
-  padding: 6% 12%;
-  border-top: #1D2120 10px solid;
-  background: #5A5C51 url('../img/hogwarts.jpg') no-repeat center;
-  background-size: cover;
-  margin: 40px 0 60px;
-  border-radius: 1%;
-  box-shadow: inset 0 0 10px 5px #1D2120;
-}
-
-.resultDS9 {
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
-  padding: 6% 12%;
-  border-top: #1D2120 10px solid;
-  background: #5A5C51 url('../img/ds9.jpg') no-repeat center;
-  background-size: cover;
-  margin: 40px 0 60px;
-  border-radius: 1%;
-  box-shadow: inset 0 0 10px 5px #1D2120;
-}
-
-.resultShire {
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
-  padding: 6% 12%;
-  border-top: #1D2120 10px solid;
-  background: #5A5C51 url('../img/shire.jpg') no-repeat center;
-  background-size: cover;
-  margin: 40px 0 60px;
-  border-radius: 1%;
-  box-shadow: inset 0 0 10px 5px #1D2120;
-}
-
-.resultMordor {
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
-  padding: 6% 12%;
-  border-top: #1D2120 10px solid;
-  background: #5A5C51 url('../img/volcano.jpg') no-repeat center;
-  background-size: cover;
-  margin: 40px 0 60px;
-  border-radius: 1%;
-  box-shadow: inset 0 0 10px 5px #1D2120;
-}*/
-
-
 /* Floated Images */
-
-/*.adventure,
-.staycation {
-  width: 46.5%;
-  margin: 0 0 30px 0;
-}*/
-
-/*.adventure {
-  float: left;
-}
-
-.staycation {
-  float: right;
-}*/
 
 .group:after {
   content: "";
@@ -188,11 +99,7 @@ img {
 /* Media Queries */
 
 @media (max-width: 768px) {
-  /*.adventure,
-  .staycation {
-    float: none;
-    width: 100%;
-  }*/
+
   .mainSection {
     font-size: .8em;
   }
@@ -213,13 +120,6 @@ Header: #77C9D4
 Status: #57BC90
 Footer: #015249
 Accent: #A5A5A5
-
-Color Scheme #2
-
-Header: #795548
-Status: #388E3C
-Footer: #FFF176
-Accent: #FFFF00
 
 Color Scheme #3
 
