@@ -18,7 +18,7 @@ $(document).ready(function() {
     var numbers = [];
 
     if (userNumber <= 0) {
-      alert("Please Enter a Number Above 1");
+      $("#warning").html("<p>Please Enter a Number Above 1. Thank you!</p>");
     }
 
     for ( var i = 1; i <= userNumber; i += 1 ) {

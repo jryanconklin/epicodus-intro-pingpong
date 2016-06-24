@@ -44,34 +44,34 @@
 <!-- Main Content Section  -->
     <div class="container">
       <div class="mainSection">
-        <h3>Ping Pong: The Text Game!</h3>
-        <p class="lead">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <h3>Ping Pong: The Number Game</h3>
+        <h4>Let's Play!</h4>
+        <p class="lead">Ping Pong is a quick number game that will count up from 1 to the number you've entered with the following exceptions:</p>
+        <ol>
+          <li>Numbers Divisible by 3 Become "ping"</li>
+          <li>Numbers Divisible by 5 Become "pong"</li>
+          <li>Numbers Divisible by 3 and 5 become "pingpong"</li>
+        </ol>
       </div> <!-- End the mainSection Div-->
-    </div> <!-- End the Main Container Div-->
-
-
-<!-- Game Section -->
-    <div class="gameSection container">
-      <div>
-        <h3>Enter a Number!</h3>
-        <form id="pingPong">
-          <div class="form form-group">
-            <label for="userNumber">Number</label>
-            <input id="userNumber" type="number">
-          </div>
-          <button type="submit" class="btn btn-danger">Submit!</button>
-        </form>
-        <div class="results">
-          <p></p>
-          <ul class="numbers">
-
-          </ul>
+  <!-- Game Section -->
+      <div class="gameSection">
+        <div>
+          <h3>Enter a Number!</h3>
+          <form id="pingPong" class="form-inline">
+            <div class="form-group has-success">
+              <label for="userNumber"></label>
+              <input id="userNumber" type="number">
+            </div>
+            <button type="submit" class="btn btn-danger">Submit!</button>
+            <div class="results">
+              <p><span id="warning"></span></p>
+              <ul class="numbers">
+              </ul>
+            </div>
+          </form>
         </div>
       </div>
-    </div>
-
+    </div> <!-- End the Main Container Div-->
 
 <!-- Footer -->
     <footer id"#bottom" class="mainFooter">

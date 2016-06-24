@@ -1,11 +1,11 @@
 /* ID Selectors */
 
-#hogwarts,
+/*#hogwarts,
 #ds9,
 #shire,
 #mordor {
   display: none;
-}
+}*/
 
 #comingSoon {
   display: none;
@@ -23,7 +23,6 @@ header h3 {
   color: #fff;
   text-shadow: 0 2px 2px rgba(0, 0, 0, .8);
 }
-
 
 body {
   margin: 0;
@@ -51,6 +50,20 @@ img {
   text-align: center;
 }
 
+.container {
+  min-height: calc(100vh - 300px);
+  text-align: center;
+}
+
+.mainSection ol {
+  display: inline-block;
+  margin: 10px;
+}
+
+.mainSection li {
+  margin: 0 5px 5px 0;
+}
+
 /*.quizSection {
   color: #fff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
@@ -63,21 +76,12 @@ img {
   box-shadow: inset 0 0 10px 5px #1D2120;
 }*/
 
-.mainContainer {
-  min-height: calc(100vh - 300px);
-}
-
 .gameSection {
-  max-width: 70%;
-  margin: 1.5em auto;
-  padding: 6% 12%;
+  align-items: center;
+  padding: 10px;
 }
 
 .mainFooter {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  clear: both;
   font-size: .75em;
   width: 100%;
   padding-top: 50px;
@@ -85,7 +89,7 @@ img {
   border-bottom: solid 10px #BCD5D1;
 }
 
-.quizDivider {
+/*.quizDivider {
   padding-top: 15px;
   padding-bottom: 15px;
   line-height: 20px;
@@ -138,24 +142,24 @@ img {
   margin: 40px 0 60px;
   border-radius: 1%;
   box-shadow: inset 0 0 10px 5px #1D2120;
-}
+}*/
 
 
 /* Floated Images */
 
-.adventure,
+/*.adventure,
 .staycation {
   width: 46.5%;
   margin: 0 0 30px 0;
-}
+}*/
 
-.adventure {
+/*.adventure {
   float: left;
 }
 
 .staycation {
   float: right;
-}
+}*/
 
 .group:after {
   content: "";
@@ -166,12 +170,17 @@ img {
 /* Media Queries */
 
 @media (max-width: 768px) {
-  .adventure,
+  /*.adventure,
   .staycation {
     float: none;
     width: 100%;
+  }*/
+  .mainSection {
+    font-size: .8em;
   }
+
   .gameSection {
+    float: none;
     font-size: .8em;
     width: 100%;
     margin: 0 10px 0 0;
