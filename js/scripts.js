@@ -10,12 +10,6 @@ var pong = function(number) {
   return true;
 };
 
-var pingPong = function(number) {
-  if (number % 15 === 0 && number !== 0)
-  return true;
-};
-
-
 // User Interface Logic
 $(document).ready(function() {
   $("form#pingPong").submit(function(event) {
@@ -23,8 +17,12 @@ $(document).ready(function() {
     var userNumber = $("input#userNumber").val();
     var numbers = [];
 
-    for ( var i = 0; i <= userNumber; i += 1 ) {
-      if (pingPong(i)) {
+    if (userNumber <= 0) {
+      alert("Please Enter a Number Above 1");
+    }
+
+    for ( var i = 1; i <= userNumber; i += 1 ) {
+      if (ping(i) && pong(i)) {
         numbers.push("pingpong");
       } else if (ping(i)) {
         numbers.push("ping");
@@ -37,6 +35,5 @@ $(document).ready(function() {
     numbers.forEach(function() {
       $(".numbers").html("<li>" + numbers + "</li>");
     });
-
   });
 });
