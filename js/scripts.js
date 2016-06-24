@@ -1,17 +1,17 @@
 // Business Logic
 
 var ping = function(number) {
-  if (number % 3 === 0)
+  if (number % 3 === 0 && number !== 0)
   return true;
 };
 
 var pong = function(number) {
-  if (number % 5 === 0)
+  if (number % 5 === 0 && number !== 0)
   return true;
 };
 
 var pingPong = function(number) {
-  if (number % 15 === 0)
+  if (number % 15 === 0 && number !== 0)
   return true;
 };
 
@@ -23,7 +23,7 @@ $(document).ready(function() {
     var userNumber = $("input#userNumber").val();
     var numbers = [];
 
-    for ( var i = 1; i <= userNumber; i += 1 ) {
+    for ( var i = 0; i <= userNumber; i += 1 ) {
       if (pingPong(i)) {
         numbers.push("pingpong");
       } else if (ping(i)) {
@@ -36,7 +36,7 @@ $(document).ready(function() {
 
     numbers.forEach(function() {
       $(".numbers").html("<li>" + numbers + "</li>");
-    });  
+    });
 
   });
 });
