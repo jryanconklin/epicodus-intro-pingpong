@@ -32,8 +32,8 @@ $(document).ready(function() {
         numbers.push(i);
     }
 
-    numbers.forEach(function() {
-      $(".numbers").html("<li>" + numbers + "</li>");
+    numbers.forEach(function(number) {
+      $(".numbers").append("<li>" + number + "</li>");
     });
   });
 });
