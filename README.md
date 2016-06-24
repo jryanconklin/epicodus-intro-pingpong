@@ -23,24 +23,34 @@ To use the clode, you can clone the repository at [https://github.com/jryanconkl
 
 ## Specifications
 * It can count up to the user inputted number.
+
 __Input Example__: 2
+
 __Example Output__: [1, 2]
 
 * It can detect numbers divisible by three and return ping.
+
 __Input Example__: 3
+
 __Example Output__: [1, 2, ping]
 
 * It can detect numbers divisible by five and return pong.
+
 __Input Example__: 5
+
 __Example Output__: [1, 2, ping, 4, pong]
 
 * It can detect numbers divisible by 15 and return pingpong.
+
 __Input Example__: 15
+
 __Example Output__: [...pong, 11, ping, 13, 14, pingpong]
 
-* It can detect and validate for numerical values.
-__Input Example__: Three
-__Example Output__: "Please Enter a Number Value"
+* It only allows number values. A zero returns only itself.
+
+__Input Example__: 0
+
+__Example Output__: 0
 
 ## Author/s
 J. Ryan Conklin
