@@ -16,11 +16,6 @@ var pingPong = function(number) {
 };
 
 
-
-
-
-
-
 // User Interface Logic
 $(document).ready(function() {
   $("form#pingPong").submit(function(event) {
@@ -39,7 +34,9 @@ $(document).ready(function() {
         numbers.push(i);
     }
 
-    $(".numbers").text(numbers);
+    numbers.forEach(function() {
+      $(".numbers").html("<li>" + numbers + "</li>");
+    });  
 
   });
 });
