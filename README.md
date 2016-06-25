@@ -14,7 +14,7 @@ HTML, CSS, BootStrap, JavaScript, and JQuery.
 
 ## Usage
 
-To view the site, please visit my gh-pages at:
+To view the site, please visit my gh-pages at: [https://jryanconklin.github.io/pingpong/](https://jryanconklin.github.io/pingpong/).
 
 To use the clode, you can clone the repository at [https://github.com/jryanconklin/pingpong](https://github.com/jryanconklin/pingpong).
 
