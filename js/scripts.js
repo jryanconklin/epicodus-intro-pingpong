@@ -1,13 +1,15 @@
 // Business Logic
 
 var ping = function(number) {
-  if (number % 3 === 0 && number !== 0)
-  return true;
+  if (number % 3 === 0 && number !== 0) {
+    return true;
+  }
 };
 
 var pong = function(number) {
-  if (number % 5 === 0 && number !== 0)
-  return true;
+  if (number % 5 === 0 && number !== 0) {
+    return true;
+  }  
 };
 
 // User Interface Logic
